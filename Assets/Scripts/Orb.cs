@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Orb : MonoBehaviour
 {
+    Move move;
     public GameObject OrbObject;
     public static int CheckPoint;
     public void OnTriggerEnter2D(Collider2D other)
@@ -11,6 +12,7 @@ public class Orb : MonoBehaviour
         {
             OrbObject.SetActive(false);
             CheckPoint += 1;
+            move.speed += 0.5f;
         }
     }
 }

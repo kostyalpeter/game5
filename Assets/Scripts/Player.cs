@@ -10,12 +10,12 @@ public class Player : MonoBehaviour
     {
         if (Mouse.current.leftButton.wasPressedThisFrame || Keyboard.current.spaceKey.wasPressedThisFrame)
         {
-            if(PlayerDown.activeSelf)
+            if(PlayerDown.activeSelf && Time.timeScale == 1)
             {
                 PlayerDown.SetActive(false);
                 PlayerUp.SetActive(true);
             }
-            else if(PlayerUp.activeSelf)
+            else if(PlayerUp.activeSelf && Time.timeScale == 1)
             {
                 PlayerDown.SetActive(true);
                 PlayerUp.SetActive(false);

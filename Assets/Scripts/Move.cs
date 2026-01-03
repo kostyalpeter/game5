@@ -2,10 +2,11 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
-    [SerializeField] private float speed = 0.65f;
+    public float speed = 5f;
+    public Transform Object;
 
     void Update()
     {
-        transform.position += Vector3.left * speed *Time.deltaTime;
+        Object.position += Vector3.left * speed *Time.deltaTime;
     }
 }
