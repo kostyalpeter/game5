@@ -7,18 +7,14 @@ public class CheckPoint : MonoBehaviour
 {
     public GameObject restart;
     public GameObject Checkpoint;
+    public GameObject Menu;
     public GameObject PlayerUp;
     public GameObject PlayerDown;
-    public AudioSource src;
-    public AudioClip Click;
 
     public Transform Map;
     public void Restart()
     {
         SceneManager.LoadScene("Game");
-        Time.timeScale = 1f;
-        Orb.CheckPoint = 0;
-        PlusPoint.PlusPoints = 0;
     }
     public void CheckPoints()
     {
@@ -30,6 +26,7 @@ public class CheckPoint : MonoBehaviour
             PlayerDown.SetActive(true);
             restart.SetActive(false);
             Checkpoint.SetActive(false);
+            Menu.SetActive(false);
         }
         if (Orb.CheckPoint == 2)
         {
@@ -39,6 +36,7 @@ public class CheckPoint : MonoBehaviour
             PlayerDown.SetActive(true);
             restart.SetActive(false);
             Checkpoint.SetActive(false);
+            Menu.SetActive(false);
         }
         if (Orb.CheckPoint == 3)
         {
@@ -48,6 +46,7 @@ public class CheckPoint : MonoBehaviour
             PlayerDown.SetActive(true);
             restart.SetActive(false);
             Checkpoint.SetActive(false);
+            Menu.SetActive(false);
         }
         if (Orb.CheckPoint == 4)
         {
@@ -57,6 +56,7 @@ public class CheckPoint : MonoBehaviour
             PlayerDown.SetActive(true);
             restart.SetActive(false);
             Checkpoint.SetActive(false);
+            Menu.SetActive(false);
         }
         if (Orb.CheckPoint == 5)
         {
@@ -66,6 +66,7 @@ public class CheckPoint : MonoBehaviour
             PlayerDown.SetActive(true);
             restart.SetActive(false);
             Checkpoint.SetActive(false);
+            Menu.SetActive(false);
         }
         if (Orb.CheckPoint == 6)
         {
@@ -75,6 +76,7 @@ public class CheckPoint : MonoBehaviour
             PlayerDown.SetActive(true);
             restart.SetActive(false);
             Checkpoint.SetActive(false);
+            Menu.SetActive(false);
         }
         if (Orb.CheckPoint == 7)
         {
@@ -84,6 +86,7 @@ public class CheckPoint : MonoBehaviour
             PlayerDown.SetActive(true);
             restart.SetActive(false);
             Checkpoint.SetActive(false);
+            Menu.SetActive(false);
         }
         if (Orb.CheckPoint == 8)
         {
@@ -93,6 +96,17 @@ public class CheckPoint : MonoBehaviour
             PlayerDown.SetActive(true);
             restart.SetActive(false);
             Checkpoint.SetActive(false);
+            Menu.SetActive(false);
+        }
+        if (Orb.CheckPoint == 9)
+        {
+            Time.timeScale = 1f;
+            Map.position = new Vector3(-322.5f, -0.27957f, 0);
+            PlayerUp.SetActive(false);
+            PlayerDown.SetActive(true);
+            restart.SetActive(false);
+            Checkpoint.SetActive(false);
+            Menu.SetActive(false);
         }
     }
 }
