@@ -12,7 +12,6 @@ public class Orb : MonoBehaviour
         {
             OrbObject.SetActive(false);
             CheckPoint += 1;
-            move.speed += 0.5f;
         }
     }
 }

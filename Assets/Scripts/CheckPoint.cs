@@ -9,7 +9,8 @@ public class CheckPoint : MonoBehaviour
     public GameObject Checkpoint;
     public GameObject PlayerUp;
     public GameObject PlayerDown;
-    public Transform wall;
+    public AudioSource src;
+    public AudioClip Click;
 
     public Transform Map;
     public void Restart()
@@ -17,6 +18,7 @@ public class CheckPoint : MonoBehaviour
         SceneManager.LoadScene("Game");
         Time.timeScale = 1f;
         Orb.CheckPoint = 0;
+        PlusPoint.PlusPoints = 0;
     }
     public void CheckPoints()
     {
@@ -37,7 +39,6 @@ public class CheckPoint : MonoBehaviour
             PlayerDown.SetActive(true);
             restart.SetActive(false);
             Checkpoint.SetActive(false);
-            wall.rotation = Quaternion.Euler(0f, 0f, 0f);
         }
         if (Orb.CheckPoint == 3)
         {
@@ -61,6 +62,33 @@ public class CheckPoint : MonoBehaviour
         {
             Time.timeScale = 1f;
             Map.position = new Vector3(-184f, -0.27957f, 0);
+            PlayerUp.SetActive(false);
+            PlayerDown.SetActive(true);
+            restart.SetActive(false);
+            Checkpoint.SetActive(false);
+        }
+        if (Orb.CheckPoint == 6)
+        {
+            Time.timeScale = 1f;
+            Map.position = new Vector3(-220f, -0.27957f, 0);
+            PlayerUp.SetActive(false);
+            PlayerDown.SetActive(true);
+            restart.SetActive(false);
+            Checkpoint.SetActive(false);
+        }
+        if (Orb.CheckPoint == 7)
+        {
+            Time.timeScale = 1f;
+            Map.position = new Vector3(-255.4f, -0.27957f, 0);
+            PlayerUp.SetActive(false);
+            PlayerDown.SetActive(true);
+            restart.SetActive(false);
+            Checkpoint.SetActive(false);
+        }
+        if (Orb.CheckPoint == 8)
+        {
+            Time.timeScale = 1f;
+            Map.position = new Vector3(-290.3f, -0.27957f, 0);
             PlayerUp.SetActive(false);
             PlayerDown.SetActive(true);
             restart.SetActive(false);
