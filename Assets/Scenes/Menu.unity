@@ -363,6 +363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Click
   src: {fileID: 321905057}
   ClickSound: {fileID: 8300000, guid: 2f5788e1f799e4a43baf15eacba98c91, type: 3}
+  WinText: {fileID: 0}
 --- !u!4 &321905059
 Transform:
   m_ObjectHideFlags: 0
@@ -1027,8 +1028,8 @@ Transform:
   m_GameObject: {fileID: 1894100243}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.094, y: -5.3678, z: 0}
-  m_LocalScale: {x: 126.24813, y: 66.26615, z: 1}
+  m_LocalPosition: {x: 0.1494, y: -9.6353, z: 0}
+  m_LocalScale: {x: 174.68568, y: 113.52824, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

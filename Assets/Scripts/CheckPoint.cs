@@ -102,8 +102,8 @@ public class CheckPoint : MonoBehaviour
         {
             Time.timeScale = 1f;
             Map.position = new Vector3(-322.5f, -0.27957f, 0);
-            PlayerUp.SetActive(false);
-            PlayerDown.SetActive(true);
+            PlayerUp.SetActive(true);
+            PlayerDown.SetActive(false);
             restart.SetActive(false);
             Checkpoint.SetActive(false);
             Menu.SetActive(false);
